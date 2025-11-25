@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran Lomba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Pendaftaran Lomba Sekolah</h2>
+
+    <form action="proses_daftar.php" method="POST">
+
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama" required>
+
+        <label>Umur:</label>
+        <input type="number" name="umur" required>
+
+        <label>Jenis Lomba:</label>
+        <select name="jenis_lomba" required>
+            <option value="">-- Pilih Lomba --</option>
+            <option value="Mewarnai">Mewarnai</option>
+            <option value="Story Telling">Story Telling</option>
+            <option value="Cerdas Cermat">Cerdas Cermat</option>
+        </select>
+
+        <button type="submit">Daftar</button>
+    </form>
+</div>
+
+</body>
+</html>
+
